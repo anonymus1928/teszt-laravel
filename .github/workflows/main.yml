@@ -3,8 +3,7 @@ on:
   push:
     branches:
       - master
-  pull_request:
-      - master
+
 jobs:
   laravel-tests:
     runs-on: ubuntu-latest
