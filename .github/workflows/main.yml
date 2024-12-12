@@ -17,6 +17,12 @@ jobs:
       - name: Install Dependencies
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
 
+      - name: NPM Dependencies
+        run: npm install
+
+      - name: NPM Build
+        run: npm run build
+
       - name: Generate key
         run: php artisan key:generate
         
